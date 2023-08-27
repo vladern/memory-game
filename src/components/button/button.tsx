@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
-import './Button.css';
+import styles from './button.module.css';
 
 export default function Button({ children, onClick }: { children?: ReactNode, onClick?: () => void }) {
     return (
-        <button className='button' onClick={onClick}>{children}</button>
+        <button className={styles.button} onClick={onClick}>{children}</button>
     );
 }

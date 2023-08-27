@@ -1,0 +1,40 @@
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: "left center right";
+}
+
+.welcome__center {
+  grid-area: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.welcome__icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  box-shadow: 0px 3px 6px #00000033;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__text {
+  text-align: center;
+  font: var(--font-bold) 4.375rem/5.125rem var(--font-roboto);
+  letter-spacing: -0.35px;
+  color: var(--color-text);
+  opacity: 1;
+  margin-top: 18px;
+  margin-bottom: 79px;
+}
+  
