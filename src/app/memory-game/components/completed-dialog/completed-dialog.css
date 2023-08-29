@@ -1,0 +1,36 @@
+.memory-game__completed-dialog {
+    padding-left: 50px;
+    padding-right: 52px;
+    padding-top: 53px;
+    padding-bottom: 50px;
+}
+
+.memory-game__completed-dialog__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.memory-game__completed-dialog__info h1 {
+    font: normal normal bold 30px Roboto;
+    padding-right: 50px;
+}
+
+.memory-game__completed-dialog__info img {
+    padding-right: 10px;
+}
+
+.memory-game__completed-dialog__info span {
+    font-size: 51px;
+    font-weight: 600;
+}
+
+.memory-game__completed-dialog__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.MuiPaper-root {
+    border-radius: 20px;
+}
