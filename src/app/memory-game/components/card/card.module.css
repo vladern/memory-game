@@ -1,0 +1,54 @@
+.memory-game__card {
+    --background-color: #FFFFFF;
+    --shadow-color: #00000040;
+    --card-size: 100px;
+    --border-radius: 10px;
+    --transition-duration: 0.5s;
+    --transition-type: ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--card-size);
+    height: var(--card-size);
+    position: relative;
+    background: var(--background-color) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 7px var(--shadow-color);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-duration) var(--transition-type);
+}
+
+.memory-game__card__number {
+    --text-color: #333333;
+    --number-size: 40px;
+    --number-font: Roboto;
+    font: normal normal bold var(--number-size)/47px var(--number-font);
+    letter-spacing: 0px;
+    color: var(--text-color);
+    position: absolute;
+    z-index: 2;
+}
+
+.memory-game__card__obverse {
+    --gradient-color: transparent linear-gradient(180deg, #F4F4F4 0%, #E7E8E8 100%);
+    --border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.2;
+    background: var(--gradient-color) 0% 0% no-repeat padding-box;
+    border-radius: var(--border-radius);
+}
+
+.memory-game__card__image {
+    --border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
+.memory-game__card--revealed {
+    transform: rotateY(180deg);
+}
