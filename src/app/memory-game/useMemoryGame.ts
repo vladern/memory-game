@@ -54,10 +54,10 @@ export default function useMemoryGame() {
         }
     }, [selectedCards, isTimerRunning, setCards, cards, setSelectedCards, handleMismatch]);
 
-    const handleExit = () => {
+    const playAgain = () => {
         setIsCompletedDialogOpen(false);
         setCards(shuffleCards(getInitialCards()));
     };
 
-    return { cards, isCompletedDialogOpen, timeInSeconds, onCardClicked, handleExit };
+    return { cards, isCompletedDialogOpen, timeInSeconds, onCardClicked, playAgain };
 }

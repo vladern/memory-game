@@ -7,12 +7,12 @@ import { formatTime } from './utilities/format-time';
 import useMemoryGame from './useMemoryGame';
 
 export default function MemoryGame() {
-    const { cards, isCompletedDialogOpen, timeInSeconds, onCardClicked, handleExit } = useMemoryGame();
+    const { cards, isCompletedDialogOpen, timeInSeconds, onCardClicked, playAgain } = useMemoryGame();
 
     return (
         <main className={styles['memory-game']}>
             <Board cards={cards} onCardClicked={onCardClicked} />
-            <CompletedDialog isOpen={isCompletedDialogOpen} time={formatTime(timeInSeconds)} handleExit={handleExit} />
+            <CompletedDialog isOpen={isCompletedDialogOpen} time={formatTime(timeInSeconds)} handleExit={playAgain} />
         </main>
     );
 }
