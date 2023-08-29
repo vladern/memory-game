@@ -35,6 +35,7 @@ export default function Card({ imgSrc, number, onClick, revealed, alt }: CardPro
                     className={styles["memory-game__card__image"]}
                     src={imgSrc}
                     alt={alt ? alt : "Tarjeta del reverso"}
+                    priority={true}
                 />
             }
         </div>
