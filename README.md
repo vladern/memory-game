@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Memory Game
+Este proyecto es una aplicación web que implementa un juego clásico de memoria. El objetivo es encontrar todas las parejas de imágenes en una parrilla de tarjetas que se muestran del reverso. El juego termina cuando se hayan revelado todas las parejas.
 
-## Getting Started
+## Tecnologías utilizadas
+- NextJS: Un framework de React que permite crear aplicaciones web con renderizado en el servidor y generación estática de páginas.
+- Typescript: Un lenguaje de programación que extiende JavaScript con tipado estático y otras características.
+- Hooks para el manejo del estado.
+## Cómo ejecutar el proyecto
+Para ejecutar el proyecto en modo desarrollo, sigue estos pasos:
 
-First, run the development server:
+- Clona el repositorio con git clone https://github.com/<tu-usuario>/memory-game.git
+- Instala las dependencias con `npm install` o `yarn install`
+- Ejecuta el servidor de desarrollo con `npm run dev` o `yarn dev`
+- Abre `http://localhost:3000` en tu navegador para ver la aplicación
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Cómo jugar al juego
+El juego consiste en encontrar todas las parejas de imágenes en una parrilla de 16 tarjetas que se muestran del reverso. Puedes hacer clic en dos tarjetas a la vez para revelar sus imágenes:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Si las tarjetas son iguales, se quedan descubiertas.
+- Si las tarjetas son distintas, se vuelven a poner del reverso y pierdes un intento.
+- El juego termina cuando hayas encontrado las 8 parejas.
+Puedes ver tu el tiempo transcurrido en el modal que sale despues de encontrar todas las parejas. También puedes reiniciar el juego en cualquier momento con el botón de volver a jugar.
