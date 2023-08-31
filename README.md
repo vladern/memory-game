@@ -1,5 +1,7 @@
 # Memory Game
 Este proyecto es una aplicación web que implementa un juego clásico de memoria. El objetivo es encontrar todas las parejas de imágenes en una parrilla de tarjetas que se muestran del reverso. El juego termina cuando se hayan revelado todas las parejas.
+![image](https://github.com/vladern/memory-game/assets/17649603/5d802273-29a1-486f-9ff2-06e2241e71ef)
+
 
 ## Tecnologías utilizadas
 - NextJS: Un framework de React que permite crear aplicaciones web con renderizado en el servidor y generación estática de páginas.
