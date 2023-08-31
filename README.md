@@ -4,9 +4,9 @@ Este proyecto es una aplicación web que implementa un juego clásico de memoria
 
 
 ## Tecnologías utilizadas
-- NextJS: Un framework de React que permite crear aplicaciones web con renderizado en el servidor y generación estática de páginas.
-- Typescript: Un lenguaje de programación que extiende JavaScript con tipado estático y otras características.
-- Hooks para el manejo del estado.
+- NextJS 🔥: Un framework de React que permite crear aplicaciones web con renderizado en el servidor y generación estática de páginas.
+- Typescript 🛠: Un lenguaje de programación que extiende JavaScript con tipado estático y otras características.
+- Hooks ⚓ para el manejo del estado.
 ## Cómo ejecutar el proyecto
 Para ejecutar el proyecto en modo desarrollo, sigue estos pasos:
 
