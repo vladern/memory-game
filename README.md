@@ -8,7 +8,7 @@ Este proyecto es una aplicación web que implementa un juego clásico de memoria
 ## Cómo ejecutar el proyecto
 Para ejecutar el proyecto en modo desarrollo, sigue estos pasos:
 
-- Clona el repositorio con git clone https://github.com/<tu-usuario>/memory-game.git
+- Clona el repositorio https://github.com/vladern/memory-game
 - Instala las dependencias con `npm install` o `yarn install`
 - Ejecuta el servidor de desarrollo con `npm run dev` o `yarn dev`
 - Abre `http://localhost:3000` en tu navegador para ver la aplicación
